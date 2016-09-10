@@ -218,10 +218,10 @@
                         <div class="footer-col-inner">
                             <h3 class="title">个人推荐网站</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#"><i class="fa fa-caret-right"></i><a>开源中国</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right"></i>CSDN</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right"></i>51CTO</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right"></i>慕课网</a></li>
+                                <li><a href="http://www.oschina.net/"><i class="fa fa-caret-right"></i><a>开源中国</a></li>
+                                <li><a href="http://www.csdn.net/"><i class="fa fa-caret-right"></i>CSDN</a></li>
+                                <li><a href="http://edu.51cto.com/"><i class="fa fa-caret-right"></i>51CTO</a></li>
+                                <li><a href="http://www.imooc.com/"><i class="fa fa-caret-right"></i>慕课网</a></li>
                                 
                             </ul>
                         </div><!--//footer-col-inner-->
@@ -249,96 +249,54 @@
         </div><!--//bottom-bar-->
     </footer><!--//footer-->
 
-    <!-- Login Modal -->
+    
+    
+     <!-- Login Modal -->
     <div class="modal modal-login" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 id="loginModalLabel" class="modal-title text-center">Log in to your account</h4>
+                    <h4 id="loginModalLabel" class="modal-title text-center">登录账户 此为私人账户</h4>
                 </div>
                 <div class="modal-body">
                     <div class="social-login text-center">                        
                         <ul class="list-unstyled social-login">
-                            <li><button class="twitter-btn btn" type="button"><i class="fa fa-twitter"></i>Log in with Twitter</button></li>
-                            <li><button class="facebook-btn btn" type="button"><i class="fa fa-facebook"></i>Log in with Facebook</button></li>
-                            <li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Log in with Google</button></li>
+                          
                         </ul>
                     </div>
-                    <div class="divider"><span>Or</span></div>
+                    <div class="divider"></div>
                     <div class="login-form-container">
                         <form class="login-form">                
                             <div class="form-group email">
-                                <label class="sr-only" for="login-email">Your email</label>
-                                <input id="login-email" name="login-email" type="email" class="form-control login-email" placeholder="Your email">
+                                <label class="sr-only" for="login-email">账户</label>
+                                <input id="login-email" name="login-email" type="email" class="form-control login-email" placeholder="账户 此为私人账户">
                             </div><!--//form-group-->
                             <div class="form-group password">
-                                <label class="sr-only" for="login-password">Password</label>
-                                <input id="login-password" name="login-password" type="password" class="form-control login-password" placeholder="Password">
-                                <p class="forgot-password">
+                                <label class="sr-only" for="login-password">密码</label>
+                                <input id="login-password" name="login-password" type="password" class="form-control login-password" placeholder="密码">
+                               <!-- <p class="forgot-password">
                                     <a href="#" id="resetpass-link" data-toggle="modal" data-target="#resetpass-modal">Forgot password?</a>
-                                </p>
+                                </p>-->
                             </div><!--//form-group-->
-                            <button type="submit" class="btn btn-block btn-cta-primary">Log in</button>
+                            <button type="submit" class="btn btn-block btn-cta-primary">登录</button>
                             <div class="checkbox remember">
                                 <label>
-                                    <input type="checkbox"> Remember me
+                                    <input type="checkbox">记住我
                                 </label>
                             </div><!--//checkbox-->
                         </form>
                     </div><!--//login-form-container-->
                 </div><!--//modal-body-->
                 <div class="modal-footer">
-                    <p>New to Tempo? <a class="signup-link" id="signup-link" href="#">Sign up now</a></p>                    
-                </div><!--//modal-footer-->
-            </div><!--//modal-content-->
-        </div><!--//modal-dialog-->
-    </div><!--//modal-->
-    
-    <!-- Signup Modal -->
-    <div class="modal modal-signup" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 id="signupModalLabel" class="modal-title text-center">New to Tempo? Sign up now.</h4>
-                    <p class="intro text-center">It only takes 3 minutes!</p>
-                    <p></p>
-                </div>
-                <div class="modal-body">
-                    <div class="social-login text-center">                        
-                        <ul class="list-unstyled social-login">
-                            <li><button class="twitter-btn btn" type="button"><i class="fa fa-twitter"></i>Sign up with Twitter</button></li>
-                            <li><button class="facebook-btn btn" type="button"><i class="fa fa-facebook"></i>Sign up with Facebook</button></li>
-                            <li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Sign up with Google</button></li>
-                        </ul>
-                        <p class="note">Don't worry, we won't post anything without your permission.</p>
-                    </div>
-                    <div class="divider"><span>Or</span></div>
-                    <div class="login-form-container">
-                        <form class="login-form">                
-                            <div class="form-group email">
-                                <label class="sr-only" for="signup-email">Your email</label>
-                                <input id="signup-email" name="signup-email" type="email" class="form-control login-email" placeholder="Your email">
-                            </div><!--//form-group-->
-                            <div class="form-group password">
-                                <label class="sr-only" for="signup-password">Your password</label>
-                                <input id="signup-password" name="signup-password" type="password" class="form-control login-password" placeholder="Password">
-                            </div><!--//form-group-->
-                            <button type="submit" class="btn btn-block btn-cta-primary">Sign up</button>
-                            <p class="note">By signing up, you agree to our terms of services and privacy policy.</p>
-                        </form>
-                    </div><!--//login-form-container-->
-                </div><!--//modal-body-->
-                <div class="modal-footer">
-                    <p>Already have an account? <a class="login-link" id="login-link" href="#">Log in</a></p>                    
+                   <!-- <p>New to Tempo? <a class="signup-link" id="signup-link" href="#">Sign up now</a></p>    -->         
                 </div><!--//modal-footer-->
             </div><!--//modal-content-->
         </div><!--//modal-dialog-->
     </div><!--//modal-->
     
     <!-- Reset Password Modal -->
-    <div class="modal modal-resetpass" id="resetpass-modal" tabindex="-1" role="dialog" aria-labelledby="resetpassModalLabel" aria-hidden="true">
+   <!-- <div class="modal modal-resetpass" id="resetpass-modal" tabindex="-1" role="dialog" aria-labelledby="resetpassModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -352,16 +310,16 @@
                             <div class="form-group email">
                                 <label class="sr-only" for="reg-email">Your email</label>
                                 <input id="reg-email" name="reg-email" type="email" class="form-control login-email" placeholder="Your email">
-                            </div><!--//form-group-->
+                            </div>//form-group-
                             <button type="submit" class="btn btn-block btn-cta-primary">Reset Password</button>
                         </form>
-                    </div><!--//login-form-container-->
-                </div><!--//modal-body-->
+                    </div><!--//login-form-container
+                </div><!--//modal-body-
                 <div class="modal-footer">
                     <p>I want to <a class="back-to-login-link" id="back-to-login-link" href="#">return to login</a></p>                    
-                </div><!--//modal-footer-->
-            </div><!--//modal-content-->
-        </div><!--//modal-dialog-->
+                </div><!--//modal-footer-
+            </div><!--//modal-content-
+        </div><!--//modal-dialog-
     </div><!--//modal-->
     
     <!-- *****CONFIGURE STYLE****** -->  
