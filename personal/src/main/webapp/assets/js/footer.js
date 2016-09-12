@@ -5,8 +5,8 @@ function login() {
 		account : account,
 		password : password
 	}
-
-	$.post('/personal/user/login', data, function(data) {
+	// 本地环境为加上 personal
+	$.post('/user/login', data, function(data) {
 		if (data.resultCode == 0) {
 			location.href = "/personal/admin";
 		} else {
