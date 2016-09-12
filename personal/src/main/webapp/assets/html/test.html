@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .active{color:red}
+    </style>
+</head>
+<body>
+<ul class="a">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+</ul>
+<script src="../../assets/plugins/jquery-1.12.3.min.js"></script>
+<script>
+    $(function(){
+        $(".a").find("li").each(function(){
+            $(this).click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+        })
+    })
+</script>
+</body>
+</html>

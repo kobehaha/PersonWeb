@@ -40,6 +40,13 @@
     <![endif]-->
 </head>
 
+<style type="text/css">
+.ul_custom {
+
+}
+</style>
+
+
 <body class="home-page">
 
 	<!-- * Facebook Like button script starts -->
@@ -126,10 +133,8 @@
 		<div class="press">
 			<div class="container text-center">
 				<div class="row">
-					<ul class="list-unstyled">
-						<li class="col-md-2 col-sm-4 col-xs-6 xs-break"><a href="#"><img
-								class="img-responsive" src="" alt=""></a></li>
-						<li class="col-md-2 col-sm-4 col-xs-6 "><a
+					<ul class="list-unstyled ">
+						<li class="col-md-2 col-sm-4 col-xs-6  ul_custom"><a
 							href="http://blog.csdn.net/kobelovestuding" alt=""><i
 								class="fa fa-rss fa-4x" aria-hidden="true"></i></a></li>
 						<li class="col-md-2 col-sm-4 col-xs-6"><a
@@ -141,9 +146,6 @@
 						<li class="col-md-2 col-sm-4 col-xs-6 sm-break"><a
 							href="http://t.qq.com/kobe_branyt"><i
 								class="fa fa-tencent-weibo fa-4x" aria-hidden="false"></i></a></li>
-
-						<li class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img
-								class="img-responsive" src="" alt=""></a></li>
 					</ul>
 				</div>
 			</div>

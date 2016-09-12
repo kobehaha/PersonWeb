@@ -25,9 +25,14 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:/config/mybatis/SqlMapConfig.xml"></property>
 		<property name="dataSource" ref="dataSource"></property>
+		<!-- 配置自动别名识别 ,有了这个配置，我们就不用去mybatis配置文件里配置别名映射了-->
+        <property name="typeAliasesPackage" value="com.zzy.pojo" />
 	</bean>
 	<!-- 配置扫描包，加载mapper代理对象 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.zzy.mapper"></property>
 	</bean>
+	
+	
+	
 </beans>
