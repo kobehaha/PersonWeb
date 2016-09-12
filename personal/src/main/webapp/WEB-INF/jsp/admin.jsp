@@ -6,21 +6,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>张志远个人博客管理系统</title>
 <link rel="stylesheet" type="text/css"
-	href="/assets/js/jquery-easyui-1.4.1/themes/default/easyui.css" />
+	href="assets/js/jquery-easyui-1.4.1/themes/default/easyui.css" />
 <link rel="stylesheet" type="text/css"
-	href="/assets/js/assetss/jquery-easyui-1.4.1/themes/icon.css" />
+	href="assets/js/assetss/jquery-easyui-1.4.1/themes/icon.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/taotao.css" />
 <script type="text/javascript"
-	src="/assets/js/jquery-easyui-1.4.1/jquery.min.js"></script>
+	src="assets/js/jquery-easyui-1.4.1/jquery.min.js"></script>
 <script type="text/javascript"
-	src="/assets/js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+	src="assets/js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
 <script type="text/javascript"
-	src="/assets/js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
+	src="assets/js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
 <script type="text/javascript" src="/assets/js/common.js"></script>
 <script type="text/javascript"
-	src="/assets/js/kindeditor-4.1.10/kindeditor-all-min.js"></script>
+	src="assets/js/kindeditor-4.1.10/kindeditor-all-min.js"></script>
 <script type="text/javascript" charset="utf-8"
-	src="/assets/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
+	src="assets/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <style type="text/css">
 .content {
 	padding: 10px 10px 10px 10px;

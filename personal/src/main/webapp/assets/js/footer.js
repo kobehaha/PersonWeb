@@ -8,7 +8,7 @@ function login() {
 	// 本地环境为加上 personal
 	$.post('/user/login', data, function(data) {
 		if (data.resultCode == 0) {
-			location.href = "/personal/admin";
+			location.href = "/admin";
 		} else {
 			console.log(data.msg);
 			$('.admin-login-alert').css('display', 'block');

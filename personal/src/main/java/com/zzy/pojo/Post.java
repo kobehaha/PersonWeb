@@ -3,29 +3,27 @@ package com.zzy.pojo;
 import java.util.Date;
 
 public class Post {
-	
 
 	private int post_id;
-	
+
 	private int author_id;
-	
+
 	private Date post_date;
-	
+
 	private String post_content;
-	
+
 	private String post_title;
-	
+
 	private String post_status;
-	
+
 	private String comment_status;
-	
+
 	private int category_id;
-	
-	private Date post_modifed_date;
-	
+
+	private Date post_modified_date;
+
 	private int comment_count;
-	
-	
+
 	public int getPost_id() {
 		return post_id;
 	}
@@ -90,12 +88,12 @@ public class Post {
 		this.category_id = category_id;
 	}
 
-	public Date getPost_modifed_date() {
-		return post_modifed_date;
+	public Date getPost_modified_date() {
+		return post_modified_date;
 	}
 
-	public void setPost_modifed_date(Date post_modifed_date) {
-		this.post_modifed_date = post_modifed_date;
+	public void setPost_modified_date(Date post_modified_date) {
+		this.post_modified_date = post_modified_date;
 	}
 
 	public int getComment_count() {
@@ -105,6 +103,5 @@ public class Post {
 	public void setComment_count(int comment_count) {
 		this.comment_count = comment_count;
 	}
-
 
 }
