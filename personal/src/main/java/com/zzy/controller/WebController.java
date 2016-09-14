@@ -20,15 +20,14 @@ public class WebController {
 	public String contact(){
 		return "contact";
 	}
-	
-	@RequestMapping("/blog")
-	public String blog(){
-		return "blog";
-	}
-	
 	@RequestMapping("/pricing")
 	public String pricing(){
 		return "pricing";
+	}
+	
+	@RequestMapping("/writeBlog")
+	public String writeBlog(){
+		return "writeBlog";
 	}
 	
 }

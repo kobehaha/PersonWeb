@@ -2,10 +2,12 @@ package com.zzy.result;
 
 import java.util.List;
 
+import com.zzy.pojo.Post;
+
 public class BlogDataResult {
 	
 	private long total;
-	private List<?> rows;
+	private List<Post> rows;
 
 	public long getTotal() {
 		return total;
@@ -13,10 +15,10 @@ public class BlogDataResult {
 	public void setTotal(long total) {
 		this.total = total;
 	}
-	public List<?> getRows() {
+	public List<Post> getRows() {
 		return rows;
 	}
-	public void setRows(List<?> rows) {
+	public void setRows(List<Post> rows) {
 		this.rows = rows;
 	}
 
