@@ -194,7 +194,7 @@
 	</div>
 	<!--//wrapper-->
 
-	<%@ include file="/WEB-INF/jsp/footer.jsp"%>
+	
 
 	<!-- Javascript -->
 	<script type="text/javascript"

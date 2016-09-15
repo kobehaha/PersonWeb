@@ -11,6 +11,18 @@
 	width: 60%;
 	height: 60%
 }
+
+.ul-category-modify {
+	float: right;
+}
+
+.list-category {
+	padding: 20px;
+}
+
+.btn {
+	padding: 0px 0px;
+}
 </style>
 <footer class="footer">
 	<div class="footer-content">
@@ -162,15 +174,51 @@
 			<div class="modal-body">
 				<div class="social-category">
 					<ul class="list-unstyled social-login">
-						<ul class="">
-							<label title>jvm虚拟机性能优化</label>
-							<li class="list-group-item">免费 Window 空间托管</li>
-							<li class="list-group-item">图像的数量</li>
+						<ul class="list-group-item">
+							<div class="list-category">
+								<label class="title">JVM</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div>
+							</div>
+							<li class="list-group-item"><label>免费windows空间托管</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div></li>
+							<li class="list-group-item"><label>免费windows空间托管</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div></li>
 						</ul>
-						<ul class="">
-							<label class="title">云计算</label>
-							<li class="list-group-item">免费windows空间托管</li>
-							<li class="list-group-item">图像数量</li>
+						<ul class="list-group-item">
+							<div class="list-category">
+								<label class="title">云计算</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div>
+							</div>
+
+							<li class="list-group-item"><label>免费windows空间托管</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div></li>
+							<li class="list-group-item">图像数量
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div>
+							</li>
 						</ul>
 					</ul>
 				</div>

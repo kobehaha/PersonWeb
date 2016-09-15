@@ -221,7 +221,11 @@ div {
 					<h5>
 						<lable class="col-sm-2 control-lable">配图</lable>
 					</h5>
-					<input type="file" id="inputfile" style="margin-top: 20px">
+					<form action="${pageContext.request.contextPath}/upload/"
+						method="post" enctype="multipart/form-data">
+						<input type="file" name="file" id="file" />
+						<button type="submit" class="default .btn-sm" value="Submit">上传</button>
+					</form>
 
 				</div>
 			</div>
