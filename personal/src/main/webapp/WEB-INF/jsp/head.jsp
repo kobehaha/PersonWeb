@@ -34,8 +34,8 @@
 						href="blog.html">个人博客<i class="fa fa-angle-down"></i></a>
 						<ul class="dropdown-menu">
 							<li><a href="${pageContext.request.contextPath}/writeBlog">写博客</a></li>
-							<li><a href="${pageContext.request.contextPath}/blog">所以博客</a></li>
-							<li><a href="404.html">404 Page</a></li>
+							<li><a href="${pageContext.request.contextPath}/blog">所有博客</a></li>
+							<li><a href="" data-toggle="modal" data-target="#category-modal" >分类管理</a></li>
 							<li><a href="email-templates/tempo-email-color-1.html">开发中</a></li>
 						</ul></li>
 					<!--//dropdown-->

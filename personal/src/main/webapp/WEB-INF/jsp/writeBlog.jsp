@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>	
+	pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/include/taglib.jsp"%>
 <%@ include file="/WEB-INF/include/namespace.jsp"%>
 <!DOCTYPE html>
@@ -9,6 +9,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet"
 	href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+<!-- Plugins CSS -->
+<link rel="stylesheet"
+	href="assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet"
+	href="assets/plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="assets/plugins/animate-css/animate.min.css">
+<!-- Theme CSS -->
+<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
 <script type="text/javascript"
 	src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -42,13 +50,23 @@ div {
 }
 
 .col-sm-2 {
-	width: 5%;
+	width: 8%;
 	margin-top: 10px
 }
 
-.blog-input-content {
-	margin-left: 10px;
-	margin-top: 40px
+.breadcrumb {
+	padding: 8px 15px;
+	margin-bottom: 40px;
+	list-style: none;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	margin-top: 40px;
+}
+
+.blog {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
 }
 </style>
 <script type="text/javascript">
@@ -164,56 +182,58 @@ div {
 </script>
 </head>
 <body>
-	<div class="blog-container well ">
-		<div class="blog-head ">
-			<h1>写博客</h1>
-
-		</div>
-	</div>
-	<div class="blog-info">
-		<ol class="breadcrumb">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">2013</a></li>
-			<li class="active">十一月</li>
-		</ol>
-	</div>
-	<div class="blog-input-area">
-		<div class="blog-input-title form">
-			<div class="form-group">
-				<h5>
-					<label class="col-sm-2 control-lablel">标题</label>
-				</h5>
-				<input type="text" class="form-control" placeholder="请输入博客标题" />
-
-			</div>
-			<br></br>
-			<div>
-				<h5>
-					<label class="col-sm-2 control-lablel">种类</label>
-				</h5>
-				<select class="input-lg">
-					<option value="">云计算</option>
-					<option value="">linux</option>
-				</select>
-			</div>
-			<br></br>
-			<div>
-				<h5>
-					<lable class="col-sm-2 control-lable">配图</lable>
-				</h5>
-				<input type="file" id="inputfile" style="margin-top: 20px">
+	<%@ include file="/WEB-INF/jsp/head.jsp"%>
+	<div class="blog-page container blog">
+		<div class="blog-container">
+			<div class="blog-head ">
+				<h2 class="title">写博客</h2>
 
 			</div>
 		</div>
+		<div class="blog-info">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">2013</a></li>
+				<li class="active">十一月</li>
+			</ol>
+		</div>
+		<div class="blog-input-area">
+			<div class="blog-input-title form">
+				<div class="form-group">
+					<h5>
+						<label class="col-sm-2 control-lablel">标题</label>
+					</h5>
+					<input type="text" class="form-control" placeholder="请输入博客标题" />
 
-	</div>
-	<div class="blog-input-content">
-		<h2>博客内容</h2>
-		<script id="editor" type="text/plain"
-			style="width: 1024px; height: 500px;"></script>
-		<div id="btns"></div>
-	</div>
-	<!--
+				</div>
+				<br></br>
+				<div>
+					<h5>
+						<label class="col-sm-2 control-lablel">种类</label>
+					</h5>
+					<select class="input-lg">
+						<option value="">云计算</option>
+						<option value="">linux</option>
+					</select>
+				</div>
+				<br></br>
+				<div>
+					<h5>
+						<lable class="col-sm-2 control-lable">配图</lable>
+					</h5>
+					<input type="file" id="inputfile" style="margin-top: 20px">
+
+				</div>
+			</div>
+
+		</div>
+		<div class="blog-input-content">
+			<h2>博客内容</h2>
+			<script id="editor" type="text/plain"
+				style="width: 1024px; height: 500px;"></script>
+			<div id="btns"></div>
+		</div>
+		<!--
 		<div>
 			<button onclick="getAllHtml()">获得整个html的内容</button>
 			<button onclick="getContent()">获得内容</button>
@@ -254,5 +274,7 @@ div {
 
 		</div>
 	-->
+	</div>
+	<%@ include file="/WEB-INF/jsp/footer.jsp"%>
 </body>
 </html>
