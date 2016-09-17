@@ -4,7 +4,7 @@
 	<div class="container">
 		<h1 class="logo pull-left">
 			<a href="${pageContext.request.contextPath}"> <span
-				class="logo-title">personalWeb</span>
+				class="logo-title" style="color: #6dbd63">personalWeb</span>
 			</a>
 		</h1>
 		<!--//logo-->

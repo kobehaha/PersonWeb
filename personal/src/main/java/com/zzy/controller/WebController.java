@@ -31,8 +31,4 @@ public class WebController {
 		return "writeBlog";
 	}
 
-	@RequestMapping("/qiniu")
-	public String qiniu() {
-		return "qiniu";
-	}
 }

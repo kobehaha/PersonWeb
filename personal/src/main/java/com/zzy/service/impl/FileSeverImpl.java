@@ -1,5 +1,7 @@
 package com.zzy.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,11 @@ public class FileSeverImpl implements FileSevice {
 
 		fileMapper.updateFile(file);
 
+	}
+
+	@Override
+	public List<File> getAllFileByPage() {
+		return fileMapper.selectFiles();
 	}
 
 }

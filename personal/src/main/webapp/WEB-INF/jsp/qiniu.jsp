@@ -67,7 +67,6 @@ div {
 	padding-top: 60px;
 	padding-bottom: 100px;
 }
-}
 </style>
 </head>
 <body>
@@ -91,13 +90,71 @@ div {
 				<br></br>
 				<div>
 					<h5>
-						<lable class="col-sm-2 control-lable">文档上传</lable>
+						<lable class="col-sm-2 control-lable">文档上传 </lable>
 					</h5>
 					<form action="${pageContext.request.contextPath}/qiniuUpload/"
 						method="post" enctype="multipart/form-data">
 						<input type="file" name="file" id="file" />
 						<button type="submit" class="default .btn-sm" value="Submit">上传</button>
+						<label class="col-sm-2 control-lable">文件大小不超过40M</label>
 					</form>
+
+					<!DOCTYPE html>
+					<html>
+<head>
+<meta charset="utf-8">
+<title>Bootstrap 实例 - 上下文类</title>
+<link rel="stylesheet"
+	href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script
+	src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<table class="table">
+		<caption>上下文表格布局</caption>
+		<thead>
+
+			<tr>
+				<th>创建</th>
+				<th>原始</th>
+				<th>转换</th>
+				<th>key</th>
+				<th>hash</th>
+				<th>大小</th>
+				<th>页数</th>
+				<th>状态</th>
+				<th>转换hash</th>
+				<th>转换key</th>
+				<th>持ID</th>
+				<th>用户</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="message" items="${result}">
+				<tr class="active">
+					<td>${message.createTime}</td>
+					<td>${message.orginName}</td>
+					<td>${message.convertName}</td>
+					<td>${message.keyValue}</td>
+					<td>${message.hashValue}</td>
+					<td>${message.size}</td>
+					<td>${message.slides}</td>
+					<td>${message.status}</td>
+					<td>${message.convertHashValue}</td>
+					<td><a
+						href="http://odmryfnyr.bkt.clouddn.com/${message.convertKeyValue}">${message.convertKeyValue}</a></td>
+					<td>${message.persistentId}</td>
+					<td>${message.user}</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+
+</body>
+					</html>
 
 				</div>
 			</div>

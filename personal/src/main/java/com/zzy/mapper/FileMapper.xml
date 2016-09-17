@@ -16,4 +16,8 @@
 					keyValue = #{keyValue}
 				</where> 
 	</update>
+	
+	<select id="selectFiles"  resultType= "File">
+		select * from file;
+	</select>
 </mapper>

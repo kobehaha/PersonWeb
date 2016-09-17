@@ -14,7 +14,7 @@ public class File {
 
 	private String user;
 
-	private String ConvertName;
+	private String convertName;
 
 	private Long size;
 
@@ -101,11 +101,11 @@ public class File {
 	}
 
 	public String getConvertName() {
-		return ConvertName;
+		return convertName;
 	}
 
 	public void setConvertName(String convertName) {
-		ConvertName = convertName;
+		this.convertName = convertName;
 	}
 
 	public Long getSize() {
