@@ -114,7 +114,7 @@ div {
 <body>
 
 	<table class="table">
-		<caption>上下文表格布局</caption>
+		<caption></caption>
 		<thead>
 
 			<tr>
@@ -133,8 +133,8 @@ div {
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach var="message" items="${result}">
-				<tr class="active">
+			<c:forEach var="message" items="${result}" varStatus="status">
+				<tr class="success">
 					<td>${message.createTime}</td>
 					<td>${message.orginName}</td>
 					<td>${message.convertName}</td>
@@ -142,7 +142,23 @@ div {
 					<td>${message.hashValue}</td>
 					<td>${message.size}</td>
 					<td>${message.slides}</td>
-					<td>${message.status}</td>
+					<c:if test="${message.status == 0 }">
+					<td>转换成功</td>
+					</c:if>
+					<c:if test="${message.status == 1 }">
+					<td>未转换</td>
+					</c:if>
+					<c:if test="${message.status == 2 }">
+					<td>等待转正</td>
+					</c:if>
+					<c:if test="${message.status == 3 }">
+					<td>正在处理</td>
+					</c:if>
+					<c:if test="${message.status == 4 }">
+					<td>转换成功未回调</td>
+					</c:if>
+					
+					
 					<td>${message.convertHashValue}</td>
 					<td><a
 						href="http://odmryfnyr.bkt.clouddn.com/${message.convertKeyValue}">${message.convertKeyValue}</a></td>
