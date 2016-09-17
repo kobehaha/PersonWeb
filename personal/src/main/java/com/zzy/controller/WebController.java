@@ -10,24 +10,29 @@ public class WebController {
 	public String index() {
 		return "index";
 	}
-	
+
 	@RequestMapping("/tour")
-	public String tour(){
+	public String tour() {
 		return "tour";
 	}
-	
+
 	@RequestMapping("/contact")
-	public String contact(){
+	public String contact() {
 		return "contact";
 	}
+
 	@RequestMapping("/pricing")
-	public String pricing(){
+	public String pricing() {
 		return "pricing";
 	}
-	
+
 	@RequestMapping("/writeBlog")
-	public String writeBlog(){
+	public String writeBlog() {
 		return "writeBlog";
 	}
-	
+
+	@RequestMapping("/qiniu")
+	public String qiniu() {
+		return "qiniu";
+	}
 }

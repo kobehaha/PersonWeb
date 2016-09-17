@@ -1,8 +1,5 @@
 package com.zzy.controller;
 
-import java.io.Console;
-
-import org.apache.http.HttpRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.zzy.result.BlogDataResult;
 import com.zzy.service.BlogSevice;
-import com.zzy.util.Constant;
 
 @Controller
 public class BologController {

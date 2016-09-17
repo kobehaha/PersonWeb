@@ -6,6 +6,23 @@
 .custom {
 	margin-top: 15px;
 }
+
+.modal-dialog {
+	width: 60%;
+	height: 60%
+}
+
+.ul-category-modify {
+	float: right;
+}
+
+.list-category {
+	padding: 20px;
+}
+
+.btn {
+	padding: 0px 0px;
+}
 </style>
 <footer class="footer">
 	<div class="footer-content">
@@ -19,7 +36,6 @@
 							<a class="more" href="#">Learn more <i
 								class="fa fa-long-arrow-right"></i></a>
 						</p>
-
 					</div>
 					<!--//footer-col-inner-->
 				</div>
@@ -142,6 +158,80 @@
 		<!--//modal-content-->
 	</div>
 	<!--//modal-dialog-->
+</div>
+<!--//modal-->
+
+<!-- category Modal -->
+<div class="modal modal-category" id="category-modal" tabindex="-1"
+	role="dialog" aria-labelledby="categoryModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">&times;</button>
+				<h4 id="" class="modal-title text-center">分类管理</h4>
+			</div>
+			<div class="modal-body">
+				<div class="social-category">
+					<ul class="list-unstyled social-login">
+						<ul class="list-group-item">
+							<div class="list-category">
+								<label class="title">JVM</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div>
+							</div>
+							<li class="list-group-item"><label>免费windows空间托管</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div></li>
+							<li class="list-group-item"><label>免费windows空间托管</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div></li>
+						</ul>
+						<ul class="list-group-item">
+							<div class="list-category">
+								<label class="title">云计算</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div>
+							</div>
+
+							<li class="list-group-item"><label>免费windows空间托管</label>
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div></li>
+							<li class="list-group-item">图像数量
+								<div class="ul-category-modify">
+									<button class="btn btn-default">修改</button>
+									<button class="btn btn-default">删除</button>
+									<label>文章总数 20</label>
+								</div>
+							</li>
+						</ul>
+					</ul>
+				</div>
+				<div class="divider"></div>
+
+			</div>
+			<div class="modal-footer">
+				<button id=category-button " class="btn  btn-cta-primary custom"
+					onclick="">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 <!--//modal-->
 

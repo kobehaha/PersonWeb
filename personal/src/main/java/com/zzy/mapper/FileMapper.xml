@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzy.mapper.FileMapper">
+	<insert id="insertFile" parameterType="File">
+		insert file ( orginName, convertName, createTime, updateTime, keyValue ,hashValue , size)
+			 values ( #{orginName} , #{convertName} , #{createTime} , #{updateTime} , #{keyValue} , #{hashValue} ,#{size})
+		
+	</insert>
+	
+	<update id = "updateFile" parameterType = "File">
+		update file set persistentId = #{persistentId} 
+					, convertKeyValue = #{convertKeyValue}
+					, convertHashValue = #{convertHashValue}
+					, status = #{status}
+				<where>
+					keyValue = #{keyValue}
+				</where> 
+	</update>
+</mapper>

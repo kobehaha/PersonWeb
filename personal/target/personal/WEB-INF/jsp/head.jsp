@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	
 <header id="header" class="header">
 	<div class="container">
 		<h1 class="logo pull-left">
@@ -33,20 +32,24 @@
 						data-hover="dropdown" data-delay="0" data-close-others="false"
 						href="blog.html">个人博客<i class="fa fa-angle-down"></i></a>
 						<ul class="dropdown-menu">
-							<li><a href="${pageContext.request.contextPath}/blog">最热</a></li>
-							<li><a href="blog-single.html">最近</a></li>
-							<li><a href="404.html">404 Page</a></li>
+							<li><a href="${pageContext.request.contextPath}/writeBlog">写博客</a></li>
+							<li><a href="${pageContext.request.contextPath}/blog">所有博客</a></li>
+							<li><a href="" data-toggle="modal"
+								data-target="#category-modal">分类管理</a></li>
 							<li><a href="email-templates/tempo-email-color-1.html">开发中</a></li>
 						</ul></li>
-					<!--//dropdown-->
 					<li id="contact" class="nav-item"><a
 						href="${pageContext.request.contextPath}/contact">个人简历</a></li>
 					<li class="nav-item"><button type="button"
 							class="login-trigger btn btn-link" data-toggle="modal"
 							data-target="#login-modal">登录</button></li>
-					<li class="nav-item nav-item-cta last"><button type="button"
-							class="btn btn-cta btn-cta-primary" data-toggle="modal"
-							data-target="#signup-modal">了解更多</button></li>
+					<li id="blog" class="nav-item dropdown"><a
+						class="dropdown-toggle" data-toggle="dropdown"
+						data-hover="dropdown" data-delay="0" data-close-others="false"
+						href="">更多<i class="fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="${pageContext.request.contextPath}/qiniu">qiniu</a></li>
+						</ul></li>
 				</ul>
 				<!--//nav-->
 			</div>
